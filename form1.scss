@@ -1,0 +1,138 @@
+html {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit; }
+
+body {
+
+  #title {
+    color: #4C4C4C;
+    font-size: 2rem;
+		text-align: center;
+    padding: 10px 0px;
+	}
+
+  #wrapper {
+		width: 50%;
+		padding: 40px 5px;
+		margin: 0 auto 40px;
+		background-color: white;
+		border: 1px;
+		box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+
+		h1, p, label, li {
+			color: #4C4C4C;
+		}
+
+		label {
+			margin: 0;
+		}
+
+    #description {
+      text-align: center;
+      padding-bottom: 7px;
+      font-size: 1.25rem;
+    }
+
+    #survey-form {
+
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px 0;
+
+        .column_left {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin-right: 50px;
+        }
+
+        .column_right {
+          width: 60%;
+          display: flex;
+          justify-content: center;
+
+          input, textarea {
+            display: flex;
+            align-items: center;
+            border: 1px solid #cccccc;
+            background: #E8F0FE;
+            width: 100%;
+						padding: 5px 0 5px 10px;
+            font-size: 14px;
+            color: #546672;
+          }
+
+					input:focus, textarea:focus {
+						outline: none;
+						border-color: #0099CC;
+					}
+
+					input::placeholder, textarea::placeholder {
+							color: #818e97;
+							font-size: 14px;
+							padding: 5px auto;
+					}
+
+					#row__one, #row__two, #row__three, #row__four {
+						margin-bottom: 10px;
+					}
+
+          .dropdown__container{
+            display: flex;
+            justify-content: center;
+
+            #dropdown{
+              width: 80%;
+							color: #4C4C4C;
+            }
+          }
+
+          ul {
+            list-style-type: none;
+            padding: 0;
+						margin: 0;
+            display: flex;
+						align-items: space-around;
+            flex-direction: column;
+            width: 70%;
+
+            li {
+              display: grid;
+              grid-template-columns: 120px 1fr;
+							margin: 2.5px 0;
+
+							[type="checkbox"], [type="radio"]{
+								align-self: center;
+								margin-left: 50%;
+							}
+
+							label {
+	              white-space: nowrap;
+	            }
+            }
+          }
+
+					#submit {
+						text-transform: uppercase;
+						background-color: #4C4C4C;
+						color: white;
+						font-size: 14px;
+						border-radius: 3px;
+						padding: 8px 40px;
+						margin: 0 8px 0;
+					}
+
+					#submit:focus {
+						outline: none;
+						border-color: #0099CC;
+					}
+				}
+      }
+    }
+  }
+}
